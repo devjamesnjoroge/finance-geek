@@ -1,0 +1,179 @@
+/* Importing font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Based on colors below generate the root variables */
+
+:root{
+    --light-green: #00d3a2;
+    --light-red: #f54748;
+    --light-grey: #f9f9f9;
+    --dark-grey: #333;
+}
+
+body{
+    /* general padding */
+    padding: 0 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+span:nth-child(1){
+    /* use the light green color */
+    color: var(--light-green);
+}
+
+strong{
+    /* use the light red color */
+    color: var(--light-red);
+}
+
+/* Styles for the loan amortization section */
+section {
+    background: var(--light-grey);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h1 {
+    color: var(--dark-grey);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--dark-grey);
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: var(--light-green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    color: var(--light-green);
+}
+
+/* Styles for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid var(--dark-grey);
+}
+
+table th {
+    background-color: var(--dark-grey);
+    color: white;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: var(--light-grey);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--lighter-grey);
+}
+
+/* Styles for flash messages */
+.flash-message {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.flash-message svg {
+    margin-right: 10px;
+}
+
+/* Styles for the reset button */
+#resetAll {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: var(--light-red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+#resetAll:hover {
+    background: white;
+    color: var(--light-red);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 0 20px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .form-control input {
+        padding: 8px;
+    }
+
+    .btn {
+        padding: 8px;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}

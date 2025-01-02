@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Amortization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <h1>Loan Amortization</h1>
+        <form>
+            <div class="form-control">
+                <label for="loanAmount">Loan Amount</label>
+                <input type="text" id="loanAmount" name="Loan Amount">
+            </div>
+            <div class="form-control">
+                <label for="interestRate">Interest Rate</label>
+                <input type="text" id="interestRate" name="Interest Rate">
+            </div>
+            <div class="form-control">
+                <label for="loanTerm">Loan Term</label>
+                <input type="text" id="loanTerm" name="Loan Term">
+            </div>
+            <button type="submit" class="btn">Calculate</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Outstanding Balance</th>
+                    <th>Principal Repaid</th>
+                    <th>Interest</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <button id="resetAll">RESET</button>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
