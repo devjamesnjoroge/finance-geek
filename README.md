@@ -27,11 +27,11 @@ Finance Geek Assistant is a web application that helps users calculate loan amor
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/devjamesnjoroge/finance-geek-assistant.git
+    git clone https://github.com/devjamesnjoroge/finance-geek.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd finance-geek-assistant
+    cd finance-geek
     ```
 3. Open `index.html` in your web browser.
 
